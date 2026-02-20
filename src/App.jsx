@@ -13,7 +13,7 @@ function App(){
       sender: 'user',
       id: 'id1'
     },{
-      message: 'Heyy How are you',
+      message: 'Heyy!! How are you',
       sender: 'robot',
       id: 'id2'
     },{
@@ -41,8 +41,8 @@ function App(){
 
         {/* This is the proper React component usage */}
         <ChatInput
-			chatMessages = {chatMessages}
-			setChatMessages = {setChatMessages}
+          chatMessages = {chatMessages}
+          setChatMessages = {setChatMessages}
         />
       </div>
     )
