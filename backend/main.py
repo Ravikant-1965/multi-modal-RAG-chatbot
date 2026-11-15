@@ -1,14 +1,28 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
-from simple_ai_assistant import get_ai_response
+
+# --- [PREVIOUS: Synchronous / Static JSON response] ---
+# from simple_ai_assistant import get_ai_response
+
+# --- [NEW: Generator for real-time token streaming] ---
+from simple_ai_assistant import generate_chat_stream
 
 app = FastAPI()
 
-# Allow React (running on localhost:5173) to call this backend
+# Allow React (running on localhost:5173 or fallback ports) to call this backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    # --- [PREVIOUS: Only port 5173 allowed] ---
+    # allow_origins=["http://localhost:5173"],
+    # --- [NEW: Added fallbacks so Vite on port 5174 is also supported] ---
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:5174",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -17,7 +31,16 @@ app.add_middleware(
 class MessageRequest(BaseModel):
     message: str
 
+# --- [PREVIOUS: Static JSON endpoint that returned all text in one shot] ---
+# @app.post("/api/chat")
+# def chat_endpoint(req: MessageRequest):
+#     reply = get_ai_response(req.message)
+#     return {"reply": reply}
+
+# --- [NEW: StreamingResponse endpoint yielding live tokens to React] ---
 @app.post("/api/chat")
 def chat_endpoint(req: MessageRequest):
-    reply = get_ai_response(req.message)
-    return {"reply": reply}
+    return StreamingResponse(
+        generate_chat_stream(req.message),
+        media_type="text/plain"
+    )
