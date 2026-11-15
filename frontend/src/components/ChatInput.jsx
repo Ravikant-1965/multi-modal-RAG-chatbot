@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Chatbot } from 'supersimpledev'  // manual package by supersimple deb, for the Chatbot API
+// --- [PREVIOUS: supersimpledev mock package] ---
+// import { Chatbot } from 'supersimpledev'  // manual package by supersimple deb, for the Chatbot API
 
 import './ChatInput.css'
 
@@ -9,18 +10,28 @@ export function ChatInput({ chatMessages, setChatMessages }){
     // function saveInputText(event){
     // 	setInputText(event.target.value)
     // }
-    function sendMessage(){ // this function will replace chatMessages with this new array
+
+    // [UPDATED]: Made async to await response from FastAPI backend
+    async function sendMessage(){ // this function will replace chatMessages with this new array
       if (!inputText.trim()) return;
+
+      const userText = inputText;
+      setInputText('');  // after entering replace it with an empty string immediately
 
       const newMessages = [
         ...chatMessages,
         {
-          message : inputText,
+          message : userText,
           sender : 'user',
           id: crypto.randomUUID()
         }
       ]
+
+      // 1. Render the user's message in the chat immediately
+      setChatMessages(newMessages);
       
+      /*
+      // --- [PREVIOUS: Synchronous SuperSimpleDev Mock Response] ---
       const response = Chatbot.getResponse(inputText);
       setChatMessages([
         ...newMessages,
@@ -30,8 +41,40 @@ export function ChatInput({ chatMessages, setChatMessages }){
           id: crypto.randomUUID()
         }
       ])
-  
-      setInputText('');  // after entering replace it with an empty string.
+      */
+
+      // --- [NEW: Calling Local Python RAG AI Assistant Backend] ---
+      try {
+        const res = await fetch('http://localhost:8000/api/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ message: userText })
+        });
+
+        const data = await res.json();
+
+        // 2. Add AI response to the chat
+        setChatMessages([
+          ...newMessages,
+          {
+            message: data.reply,
+            sender: 'robot',
+            id: crypto.randomUUID()
+          }
+        ]);
+      } catch (error) {
+        console.error("Error connecting to AI backend:", error);
+        setChatMessages([
+          ...newMessages,
+          {
+            message: "Error: Unable to connect to AI backend. Make sure FastAPI server is running on port 8000.",
+            sender: 'robot',
+            id: crypto.randomUUID()
+          }
+        ]);
+      }
     }
 
 

@@ -101,65 +101,89 @@ def build_tool_calls_payload(tool_calls):
     return payload
 
 
+if __name__ == "__main__":
+    while True:
+        user_input = input("Ravi: ")
 
-while True:
-    user_input = input("Ravi: ")
+        if user_input.lower() in ["exit", "bye", "quit"]:
+            break
 
-    if user_input.lower() in ["exit", "bye", "quit"]:
-        break
+        messages.append(
+            {
+                "role":"user",
+                "content":user_input
+            }
+        )
 
-    messages.append(
-        {
-            "role":"user",
-            "content":user_input
-        }
-    )
+        MAX_STEPS = 5
 
-    MAX_STEPS = 5
+        #chained tool calling
+        try :
+            for steps in range(MAX_STEPS):
 
-    #chained tool calling
-    try :
-        for steps in range(MAX_STEPS):
+                full_response, tool_calls = stream_chat(messages)
 
-            full_response, tool_calls = stream_chat(messages)
-
-            if not tool_calls:
-                break
+                if not tool_calls:
+                    break
 
 
-            log(f"Step {steps+1}: model requested {len(tool_calls)} tool calls")
-            
+                log(f"Step {steps+1}: model requested {len(tool_calls)} tool calls")
+                
 
-            messages.append({
-                "role": "assistant",
-                "content": full_response,
-                "tool_calls": build_tool_calls_payload(tool_calls)
-            })
+                messages.append({
+                    "role": "assistant",
+                    "content": full_response,
+                    "tool_calls": build_tool_calls_payload(tool_calls)
+                })
 
-            for tool_call in tool_calls:
+                for tool_call in tool_calls:
 
-                result = execute_tool_call(tool_call)
+                    result = execute_tool_call(tool_call)
 
-                messages.append(
-                    {
-                        "role": "tool",
-                        "tool_call_id": tool_call.id,
-                        "content": str(result)
-                    }
-                )
-        else:
-            fallback = "Sorry i couldn't finish this within the steps limit"
-            messages.append({
-                "role":"assistant",
-                "content":fallback
-            })
+                    messages.append(
+                        {
+                            "role": "tool",
+                            "tool_call_id": tool_call.id,
+                            "content": str(result)
+                        }
+                    )
+            else:
+                fallback = "Sorry i couldn't finish this within the steps limit"
+                messages.append({
+                    "role":"assistant",
+                    "content":fallback
+                })
 
-            print(f"AI:{fallback}")
-            continue
+                print(f"AI:{fallback}")
+                continue
 
-    except KeyboardInterrupt:
-        print("\nAI: Exiting...(Stopped by User)")
-        calls = {}
-        break
+        except KeyboardInterrupt:
+            print("\nAI: Exiting...(Stopped by User)")
+            calls = {}
+            break
 
     
+def get_ai_response(user_message: str) -> str:
+    # Appends user message and runs the tool/LLM execution loop
+    messages.append({"role": "user", "content": user_message})
+    
+    MAX_STEPS = 5
+    for step in range(MAX_STEPS):
+        full_response, tool_calls = stream_chat(messages)
+        if not tool_calls:
+            return full_response
+
+        messages.append({
+            "role": "assistant",
+            "content": full_response,
+            "tool_calls": build_tool_calls_payload(tool_calls)
+        })
+
+        for tool_call in tool_calls:
+            result = execute_tool_call(tool_call)
+            messages.append({
+                "role": "tool",
+                "tool_call_id": tool_call.id,
+                "content": str(result)
+            })
+    return "Sorry, I couldn't finish this within the steps limit."
