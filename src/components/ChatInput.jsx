@@ -10,6 +10,8 @@ export function ChatInput({ chatMessages, setChatMessages }){
     // 	setInputText(event.target.value)
     // }
     function sendMessage(){ // this function will replace chatMessages with this new array
+      if (!inputText.trim()) return;
+
       const newMessages = [
         ...chatMessages,
         {
@@ -40,6 +42,7 @@ export function ChatInput({ chatMessages, setChatMessages }){
             placeholder="Send a message to the Chatbot"
             size="30"
             onChange={e => setInputText(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter') sendMessage(); }}
             value = {inputText}
             className="chat-input"
             // Each time the input changes, React calls the inline arrow function.
