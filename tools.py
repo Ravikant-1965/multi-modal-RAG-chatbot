@@ -2,6 +2,7 @@ from datetime import datetime
 import requests
 import json
 from Utilities.utilities import log
+from rag import search
 
 # 1. Actual Python function definition
 # This is the real code that runs locally on our machine when called.

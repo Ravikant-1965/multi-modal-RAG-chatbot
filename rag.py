@@ -2,28 +2,39 @@ import json
 import os
 
 import numpy
-from openai import OpenAI
+# from openai import OpenAI  # <-- [PREVIOUS]: Used OpenAI client to request embeddings from Ollama / remote API
+from sentence_transformers import SentenceTransformer  # <-- [NEW]: Loads and runs embedding model directly in Python
 from dotenv import load_dotenv
 
 load_dotenv() #by default looks for .env file
 
-client = OpenAI(
-    base_url=os.getenv("BASE_URL"),
-    api_key=os.getenv("API_KEY")
-)
+# --- [PREVIOUS]: Client setup for Ollama embeddings ---
+# client = OpenAI(
+#     base_url=os.getenv("BASE_URL"),
+#     api_key=os.getenv("API_KEY")
+# )
+# EMBED_MODEL       = os.getenv("EMBED_MODEL")
 
-EMBED_MODEL       = os.getenv("EMBED_MODEL")
+# --- [NEW]: Initialize SentenceTransformer model directly in-memory ---
+EMBED_MODEL_NAME  = os.getenv("EMBED_MODEL", "nomic-ai/nomic-embed-text-v1.5")
+embedding_model   = SentenceTransformer(EMBED_MODEL_NAME, trust_remote_code=True)
+
 KB_FOLDER         = os.getenv("KB_FOLDER")
 VECTOR_STORE_FILE = os.getenv("VECTOR_STORE_FILE")
 
 
-#Get the embedding of a text from Embedding model
+# --- [PREVIOUS]: Calling embeddings via OpenAI API protocol ---
+# def get_embedding(text):
+#     response = client.embeddings.create(
+#         model=EMBED_MODEL,
+#         input=text
+#     )
+#     return response.data[0].embedding
+
+# --- [NEW]: Computing embeddings locally via sentence-transformers ---
+# Get the embedding of a text from Embedding model
 def get_embedding(text):
-    response = client.embeddings.create(
-        model=EMBED_MODEL,
-        input=text
-    )
-    return response.data[0].embedding
+    return embedding_model.encode(text).tolist()
 
 #Get the cosine similarity between two vectors
 def cosine_similarity(A, B):
