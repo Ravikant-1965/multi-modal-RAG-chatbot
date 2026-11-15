@@ -56,13 +56,9 @@ export function ChatInput({ chatMessages, setChatMessages }){
         const data = await res.json();
 
         // 2. Add AI response to the chat
-        setChatMessages([
-          ...newMessages,
-          {
-            message: data.reply,
-            sender: 'robot',
-            id: crypto.randomUUID()
-          }
+        setChatMessages(prev => [
+            ...prev,
+            { message: data.reply, sender: 'robot', id: crypto.randomUUID() }
         ]);
       } catch (error) {
         console.error("Error connecting to AI backend:", error);

@@ -171,6 +171,7 @@ def get_ai_response(user_message: str) -> str:
     for step in range(MAX_STEPS):
         full_response, tool_calls = stream_chat(messages)
         if not tool_calls:
+            messages.append({"role": "assistant", "content": full_response})
             return full_response
 
         messages.append({
