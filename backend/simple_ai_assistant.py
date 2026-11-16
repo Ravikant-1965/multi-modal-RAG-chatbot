@@ -21,7 +21,7 @@ messages = []
 messages.append(
     {
         "role":"system",
-        "content":"You are humble assitant. Resopond within 100 words"
+        "content":"You are humble assitant. Resopond within 500 words"
     }
 )
 
