@@ -114,9 +114,15 @@ def create_chunks():
     return chunks
 
 
-def index_documents():
-    # Only index if ChromaDB is currently empty
-    if collection.count() == 0:
+def index_documents(force_reindex=False):
+    # Re-index if requested or if ChromaDB is currently empty
+    if force_reindex or collection.count() == 0:
+        if force_reindex and collection.count() > 0:
+            existing_ids = collection.get().get("ids", [])
+            if existing_ids:
+                collection.delete(ids=existing_ids)
+                print(f"ChromaDB: Cleared {len(existing_ids)} old chunks.")
+
         chunks = create_chunks()  # Uses your existing chunking logic
         
         ids = []

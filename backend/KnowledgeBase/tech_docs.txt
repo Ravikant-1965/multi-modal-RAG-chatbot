@@ -1,11 +1,41 @@
-Tech Docs - Code Review
-Every pull request needs 2 approvals before merging. Pull requests should be under 400 lines. Larger changes must be split.
+GGSIPU USAR IT Infrastructure: Central Computing Centre and Departmental Computing Laboratories
+University School of Automation and Robotics (USAR), Guru Gobind Singh Indraprastha University (GGSIPU), East Delhi Campus, Surajmal Vihar, Delhi 110032. The East Delhi Campus features a Central Computing Centre and advanced departmental computing laboratories supporting B.Tech programs in Artificial Intelligence & Data Science (AI-DS), Artificial Intelligence & Machine Learning (AI-ML), Industrial Internet of Things (IIOT), and Automation & Robotics (AR).
 
-Tech Docs - Deployment Windows
-Production deployments are allowed on Tuesdays and Thursdays between 11 AM and 4 PM. There are no deployments on Fridays.
+Campus High-Speed Wi-Fi Setup and Student Network Login Policy
+All students enrolled at USAR GGSIPU East Delhi Campus are provided with secure campus Wi-Fi and structured LAN access across academic blocks, laboratories, the central library, and student amenity areas. Students connect via the 'GGSIPU-EDC-STUDENT' SSID using their 11-digit university enrollment number (e.g., 03819051923) as the username and their university-registered password. Network authentication is validated through the central campus RADIUS server.
 
-Tech Docs - Branch Naming
-Branches are named feature/short-description or bugfix/ticket-id. The main branch is protected and cannot be pushed to directly.
+Acceptable Network Usage and Campus Cyber Security Regulations
+The university campus network is strictly designated for academic instruction, coursework, research projects, and official administrative access. Downloading pirated software, torrenting, engaging in commercial activities, cryptocurrency mining, or attempting to bypass institutional firewall filters using unauthorized proxy servers or VPN tunnels is strictly prohibited and subject to disciplinary action under the university cyber safety policy.
 
-Tech Docs - On-Call
-The on-call rotation lasts one week. The handover happens every Monday at 10 AM, and the outgoing engineer writes a short handover note.
+AICTE IDEA Lab and Hardware Prototyping Infrastructure
+USAR hosts a dedicated AICTE IDEA (Idea Development, Evaluation & Application) Lab at the East Delhi Campus. The lab is equipped with 3D printers, laser cutters, CNC milling units, high-precision soldering stations, and embedded development boards (NVIDIA Jetson Nano, Raspberry Pi 4, Arduino, ESP32) to facilitate student innovation, capstone engineering projects, and research prototypes.
+
+High-Performance Computing and GPU AI Workstations
+Departmental computing laboratories at USAR are equipped with high-performance Dell and HP workstations powered by Intel Core i7/i9 processors, minimum 32 GB to 64 GB RAM, and dedicated NVIDIA RTX graphics cards. These systems support deep learning model training, computer vision workloads, robotics simulations (ROS / Gazebo), and large-scale data analytics.
+
+Computer Lab Access Rules and Student Code of Conduct
+Students must swipe their institutional RFID identity cards upon entering any USAR computing facility. Food, beverages, chewing gum, and personal bags are strictly barred inside the labs. Students must maintain absolute silence and save their coursework in designated personal cloud drives or version control repositories (GitHub), as local workstations reset temporary user partitions on system restart.
+
+University Learning Management System (LMS) and Portal Access
+USAR students access course syllabus materials, laboratory assignment submissions, and weekly lecture notes through the official GGSIPU LMS and student portal (edc.ipu.ac.in). Student accounts are initialized at the beginning of each academic semester by the IT Department. Password reset requests must be routed via the Departmental IT Coordinator.
+
+Licensed Software and Academic Development Environments
+All computer lab systems are pre-installed with Ubuntu Linux and Windows 11 dual-boot environments. Licensed academic software stacks include MATLAB & Simulink, Python 3.x (with PyTorch, TensorFlow, OpenCV, scikit-learn), Robot Operating System (ROS2), SolidWorks, AutoCAD, and database tools including PostgreSQL and MongoDB. Unauthorized installation of personal executables or games is strictly prohibited.
+
+Laboratory Printing and Academic Scanning Services
+The Central Computing Centre provides authorized printing and scanning services for university minor project reports, research publications, and laboratory records. Students are allocated a monthly printing quota upon presenting their valid student identity card to the lab superintendent.
+
+Network Bandwidth Allocation and Fair Usage Policy (FUP)
+To ensure uninterrupted network availability for online exams, virtual conferences, and lab practicals, a Fair Usage Policy is enforced across student access points. Individual connections are capped at dynamic burst limits sufficient for video lectures and research literature access. Network bandwidth resets every 24 hours.
+
+Student Council Activity Hours Portal and Online Event Tracking
+USAR utilizes a dedicated Student Activity Hours Portal where students record and track co-curricular participation in technical fests, hackathons, robotics competitions, and IEEE/ACM student chapter activities. Validated hours contribute toward internal assessment credits as prescribed in university curriculum schemes.
+
+Hostel Internet and Residential Wi-Fi Facilities
+Hostel residential blocks at GGSIPU East Delhi Campus are integrated with 24x7 Wi-Fi mesh routers. Internet services in hostel premises are monitored by the campus Network Operations Centre (NOC). Bandwidth shaping is implemented during peak academic hours to prioritize institutional digital library access.
+
+IT Helpdesk and Grievance Redressal
+Any hardware malfunction, peripheral damage, or network connectivity outage must be reported immediately to the IT Helpdesk located on the ground floor of the Academic Block, USAR, or logged via email to helpdesk.edc@ipu.ac.in. Tampering with system cables, switches, or Wi-Fi access points incurs immediate fines and disciplinary inquiry.
+
+University Digital Library Access and E-Resource Portals
+Students can access IEEE Xplore, ScienceDirect, SpringerLink, and ACM Digital Library subscriptions from within the campus intranet or remotely via institutional VPN credentials. The digital library portal provides access to over 10,000 peer-reviewed journals, previous years' question papers, and national conference proceedings.

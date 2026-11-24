@@ -1,0 +1,46 @@
+ExamDate,Shift,PaperCode,SubjectName,Branch,Semester,RoomNumber,RowRange,EnrollmentStart,EnrollmentEnd
+2026-12-01,Morning (10:00 AM - 01:00 PM),AIDS-301,Artificial Intelligence & Knowledge Representation,AI-DS,5th Sem,Room-101,Row A1 - A4,00119051923,02519051923
+2026-12-01,Morning (10:00 AM - 01:00 PM),AIDS-301,Artificial Intelligence & Knowledge Representation,AI-DS,5th Sem,Room-102,Row B1 - B4,02619051923,05019051923
+2026-12-01,Morning (10:00 AM - 01:00 PM),AIDS-301,Artificial Intelligence & Knowledge Representation,AI-DS,5th Sem,Room-103,Row C1 - C4,05119051923,07519051923
+2026-12-01,Evening (02:00 PM - 05:00 PM),AIML-301,Machine Learning Fundamentals,AI-ML,5th Sem,Room-104,Row A1 - A4,00119052023,03019052023
+2026-12-01,Evening (02:00 PM - 05:00 PM),AIML-301,Machine Learning Fundamentals,AI-ML,5th Sem,Room-105,Row B1 - B4,03119052023,06019052023
+2026-12-02,Morning (10:00 AM - 01:00 PM),ETCS-205,Data Structures and Algorithms,CSE / AI-DS,3rd Sem,Room-201,Row A1 - A4,00119051924,03019051924
+2026-12-02,Morning (10:00 AM - 01:00 PM),ETCS-205,Data Structures and Algorithms,CSE / AI-DS,3rd Sem,Room-202,Row B1 - B4,03119051924,06519051924
+2026-12-02,Morning (10:00 AM - 01:00 PM),ETCS-205,Data Structures and Algorithms,CSE / AI-DS,3rd Sem,Room-203,Row C1 - C4,06619051924,10019051924
+2026-12-02,Evening (02:00 PM - 05:00 PM),IIOT-303,Microcontrollers and Embedded Systems,IIOT,5th Sem,Room-204,Row A1 - A4,00119052123,03519052123
+2026-12-02,Evening (02:00 PM - 05:00 PM),IIOT-303,Microcontrollers and Embedded Systems,IIOT,5th Sem,Room-205,Row B1 - B4,03619052123,07019052123
+2026-12-03,Morning (10:00 AM - 01:00 PM),AIDS-303,Big Data Analytics and Mining,AI-DS,5th Sem,Room-101,Row A1 - A4,00119051923,03019051923
+2026-12-03,Morning (10:00 AM - 01:00 PM),AIDS-303,Big Data Analytics and Mining,AI-DS,5th Sem,Room-102,Row B1 - B4,03119051923,06019051923
+2026-12-03,Morning (10:00 AM - 01:00 PM),AIDS-303,Big Data Analytics and Mining,AI-DS,5th Sem,Room-103,Row C1 - C4,06119051923,09019051923
+2026-12-03,Evening (02:00 PM - 05:00 PM),ROBO-301,Kinematics and Dynamics of Robots,AR,5th Sem,Room-104,Row A1 - A4,00119052223,03519052223
+2026-12-03,Evening (02:00 PM - 05:00 PM),ROBO-301,Kinematics and Dynamics of Robots,AR,5th Sem,Room-105,Row B1 - B4,03619052223,07019052223
+2026-12-04,Morning (10:00 AM - 01:00 PM),AIDS-305,Database Management Systems & SQL,AI-DS,5th Sem,Room-101,Row A1 - A4,00119051923,02819051923
+2026-12-04,Morning (10:00 AM - 01:00 PM),AIDS-305,Database Management Systems & SQL,AI-DS,5th Sem,Room-102,Row B1 - B4,02919051923,05519051923
+2026-12-04,Morning (10:00 AM - 01:00 PM),AIDS-305,Database Management Systems & SQL,AI-DS,5th Sem,Room-103,Row C1 - C4,05619051923,08519051923
+2026-12-04,Evening (02:00 PM - 05:00 PM),AIML-305,Natural Language Processing,AI-ML,5th Sem,Room-104,Row A1 - A4,00119052023,03019052023
+2026-12-04,Evening (02:00 PM - 05:00 PM),AIML-305,Natural Language Processing,AI-ML,5th Sem,Room-105,Row B1 - B4,03119052023,06019052023
+2026-12-05,Morning (10:00 AM - 01:00 PM),ETEC-207,Analog and Digital Electronics,All Branches,3rd Sem,Room-201,Row A1 - A4,00119051924,03519051924
+2026-12-05,Morning (10:00 AM - 01:00 PM),ETEC-207,Analog and Digital Electronics,All Branches,3rd Sem,Room-202,Row B1 - B4,03619051924,07019051924
+2026-12-05,Morning (10:00 AM - 01:00 PM),ETEC-207,Analog and Digital Electronics,All Branches,3rd Sem,Room-203,Row C1 - C4,07119051924,10519051924
+2026-12-05,Evening (02:00 PM - 05:00 PM),IIOT-307,Industrial Communication Networks,IIOT,5th Sem,Room-204,Row A1 - A4,00119052123,03519052123
+2026-12-05,Evening (02:00 PM - 05:00 PM),IIOT-307,Industrial Communication Networks,IIOT,5th Sem,Room-205,Row B1 - B4,03619052123,07019052123
+2026-12-08,Morning (10:00 AM - 01:00 PM),AIDS-307,Operating Systems & System Programming,AI-DS,5th Sem,Room-101,Row A1 - A4,00119051923,03019051923
+2026-12-08,Morning (10:00 AM - 01:00 PM),AIDS-307,Operating Systems & System Programming,AI-DS,5th Sem,Room-102,Row B1 - B4,03119051923,06019051923
+2026-12-08,Morning (10:00 AM - 01:00 PM),AIDS-307,Operating Systems & System Programming,AI-DS,5th Sem,Room-103,Row C1 - C4,06119051923,09019051923
+2026-12-08,Evening (02:00 PM - 05:00 PM),ROBO-305,Sensors and Actuators in Automation,AR,5th Sem,Room-104,Row A1 - A4,00119052223,03519052223
+2026-12-08,Evening (02:00 PM - 05:00 PM),ROBO-305,Sensors and Actuators in Automation,AR,5th Sem,Room-105,Row B1 - B4,03619052223,07019052223
+2026-12-09,Morning (10:00 AM - 01:00 PM),ETMA-201,Applied Mathematics III,All Branches,3rd Sem,Room-201,Row A1 - A4,00119051924,03519051924
+2026-12-09,Morning (10:00 AM - 01:00 PM),ETMA-201,Applied Mathematics III,All Branches,3rd Sem,Room-202,Row B1 - B4,03619051924,07019051924
+2026-12-09,Morning (10:00 AM - 01:00 PM),ETMA-201,Applied Mathematics III,All Branches,3rd Sem,Room-203,Row C1 - C4,07119051924,10519051924
+2026-12-09,Evening (02:00 PM - 05:00 PM),AIML-309,Computer Vision and Image Processing,AI-ML,5th Sem,Room-104,Row A1 - A4,00119052023,03019052023
+2026-12-09,Evening (02:00 PM - 05:00 PM),AIML-309,Computer Vision and Image Processing,AI-ML,5th Sem,Room-105,Row B1 - B4,03119052023,06019052023
+2026-12-10,Morning (10:00 AM - 01:00 PM),AIDS-309,Software Engineering & Agile Methodologies,AI-DS,5th Sem,Room-101,Row A1 - A4,00119051923,03019051923
+2026-12-10,Morning (10:00 AM - 01:00 PM),AIDS-309,Software Engineering & Agile Methodologies,AI-DS,5th Sem,Room-102,Row B1 - B4,03119051923,06019051923
+2026-12-10,Morning (10:00 AM - 01:00 PM),AIDS-309,Software Engineering & Agile Methodologies,AI-DS,5th Sem,Room-103,Row C1 - C4,06119051923,09019051923
+2026-12-10,Evening (02:00 PM - 05:00 PM),IIOT-311,Cloud Computing and Edge Devices,IIOT,5th Sem,Room-204,Row A1 - A4,00119052123,03519052123
+2026-12-10,Evening (02:00 PM - 05:00 PM),IIOT-311,Cloud Computing and Edge Devices,IIOT,5th Sem,Room-205,Row B1 - B4,03619052123,07019052123
+2026-12-11,Morning (10:00 AM - 01:00 PM),ETMS-311,Principles of Management and Entrepreneurship,All Branches,5th Sem,Room-101,Row A1 - A4,00119051923,04019051923
+2026-12-11,Morning (10:00 AM - 01:00 PM),ETMS-311,Principles of Management and Entrepreneurship,All Branches,5th Sem,Room-102,Row B1 - B4,04119051923,08019051923
+2026-12-11,Morning (10:00 AM - 01:00 PM),ETMS-311,Principles of Management and Entrepreneurship,All Branches,5th Sem,Room-103,Row C1 - C4,08119051923,12019051923
+2026-12-11,Evening (02:00 PM - 05:00 PM),ROBO-309,Control Systems Engineering,AR,5th Sem,Room-104,Row A1 - A4,00119052223,03519052223
+2026-12-11,Evening (02:00 PM - 05:00 PM),ROBO-309,Control Systems Engineering,AR,5th Sem,Room-105,Row B1 - B4,03619052223,07019052223

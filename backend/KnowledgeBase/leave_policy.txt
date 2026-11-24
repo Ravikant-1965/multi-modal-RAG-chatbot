@@ -1,14 +1,53 @@
-Leave Policy - Casual Leave
-Every employee at Zorvex Technologies gets 12 days of casual leave per year. Casual leave must be applied at least one day in advance and cannot be carried forward.
+GGSIPU Ordinance 11: Mandatory 75 Percent Attendance Regulations for B.Tech Programs
+Guru Gobind Singh Indraprastha University (GGSIPU), Ordinance 11 mandates that every registered student in undergraduate professional engineering programs (B.Tech at USAR / USICT) must secure a minimum aggregate attendance of 75% across all courses, lectures, tutorials, and practical laboratory sessions taken together in a semester to be eligible to appear for the End-Term University Examinations.
 
-Leave Policy - Earned Leave
-Employees earn 1.5 days of earned leave per month, which is 18 days per year. Up to 30 days of earned leave can be carried forward to the next year.
+Consequences of Attendance Shortage Below 75 Percent
+A student who fails to meet the minimum mandatory aggregate attendance of 75% in a semester and does not qualify for authorized condonation is classified as 'Detained' from the End-Term Examinations. Detained students are debarred from sitting for the semester theory and practical exams and cannot be promoted to the subsequent academic semester.
 
-Leave Policy - Sick Leave
-Employees get 10 days of paid sick leave per year. A medical certificate is required if sick leave exceeds 2 consecutive days.
+Re-Admission Rules for Detained Students
+As per official GGSIPU academic ordinances, detained students are mandated to take formal re-admission in the same semester during the subsequent academic year and repeat all coursework, laboratory practicals, and internal continuous evaluation tests alongside the junior batch. The academic loss of one full year cannot be waived.
 
-Leave Policy - Maternity and Paternity Leave
-Maternity leave is 26 weeks of paid leave. Paternity leave is 10 working days and must be taken within 3 months of the child's birth.
+Discretionary Condonation of Attendance Shortage up to 5 Percent
+Under GGSIPU Ordinance 11, the Dean of the University School (USAR/USICT) possesses discretionary authority to condone an attendance shortage of up to 5% (permitting students with an aggregate attendance between 70% and 75% to appear for exams). This condonation is granted exclusively for valid, documented medical emergencies or official representation of the university in recognized sports, cultural, or technical competitions.
 
-Leave Policy - Applying for Leave
-Leave must be applied for in the Zorvex PeopleHub portal and approved by the reporting manager. An unapproved absence of more than 3 days is treated as unauthorized absence.
+Absolute Minimum Attendance Floor of 70 Percent
+Under no circumstances can the aggregate attendance threshold drop below 70%, even when supported by certified medical records, hospital discharge summaries, or official university deputation orders. A student whose aggregate attendance falls below 70% is strictly and unconditionally detained from the End-Term Examinations.
+
+Procedure for Submitting Medical Leave Applications
+A student who is absent on medical grounds must submit a formal medical leave application along with a registered medical practitioner's prescription, fitness certificate, and hospital discharge slip (in case of hospitalization) to the Office of the Dean, USAR, within seven (7) working days of resuming classes. Applications submitted at the end of the semester during exam notification will be rejected summarily.
+
+Medical Certificates Do Not Automatically Grant Attendance
+Submission of a medical certificate does not automatically erase or add percentage points to a student's daily attendance ledger. Rather, the verified medical record serves as the official documentary proof required if the student's case is reviewed by the Dean for discretionary condonation under the 5% relaxation margin (between 70% and 75%).
+
+Duty Leave / Academic Representation Condonation
+Students selected to represent GGSIPU or USAR in state, national, or international technical competitions, hackathons, seminars, or sports meets are granted academic Duty Leave (DL). Duty Leave applications must be countersigned in advance by the designated Faculty Advisor and approved by the Dean prior to departure.
+
+Monthly Attendance Display and Student Verification
+Attendance registers are compiled monthly by course instructors at USAR and published on the departmental notice board and student portal during the first week of every month. Students are required to verify their cumulative percentage and immediately report discrepancies to the concerned faculty member within five days of publication.
+
+Continuous Internal Assessment Weightage and Attendance
+Under the GGSIPU credit evaluation scheme, continuous internal assessment accounts for 25% to 40% of the total marks in every theory and practical course. Regular classroom attendance, active tutorial participation, and timely submission of laboratory assignments contribute significantly toward internal assessment awards.
+
+Maternity and Extended Medical Convalescence Policies
+Female students seeking maternity leave or students requiring extended bed rest due to severe ailments (such as typhoid, jaundice, or bone fractures) must provide official intimation to the Dean, USAR, within ten days of the onset of illness. While guidelines follow statutory university provisions, overall attendance compliance remains subject to Ordinance 11 mandates.
+
+Detention Warning Notices and Parent Intimation
+USAR issues mid-semester detention warning notices to students whose cumulative attendance falls below 65% at the end of the 8th week of the semester. Formal warning letters and electronic communications are dispatched to parents/guardians advising immediate corrective action to avoid final detention at the semester conclusion.
+
+Attendance in Practical Laboratories and Project Sessions
+Attendance in practical laboratory sessions and minor project workshops is mandatory with zero tolerance for casual absenteeism. Missing more than two laboratory practicals without prior written permission from the lab instructor results in an immediate loss of internal practical evaluation marks.
+
+Mid-Semester Examination Attendance and Make-Up Tests
+Attendance in scheduled mid-semester examinations (minor tests) is compulsory. If a student misses a mid-semester examination due to a verified medical emergency, the department may arrange a compensatory make-up test subject to the Dean's written authorization and submission of genuine medical proof.
+
+Semester Break and Preparation Leave Regulations
+Students are not permitted to proceed on unauthorized leave prior to the official commencement of preparatory leave. The academic calendar published by GGSIPU specifies exact dates for instruction closure, preparatory leave, and examination commencement.
+
+Faculty Advisory System and Attendance Monitoring
+Each batch at USAR is assigned a dedicated Faculty Advisor (Mentor). Students facing personal difficulties, health concerns, or academic stress affecting their classroom attendance are encouraged to schedule regular counseling sessions with their mentor for guidance and administrative facilitation.
+
+Late Registration and Attendance Calculation
+Students who complete semester registration after the prescribed last date are not granted retroactive attendance for missed classes. Attendance is calculated strictly from the official date of teaching commencement announced in the GGSIPU university academic calendar.
+
+Grievance Redressal Mechanism for Attendance Records
+Any grievance regarding calculated attendance percentages must be submitted in writing to the School Attendance Redressal Committee within three working days of the display of the final semester detention list. The committee's verified finding, approved by the Dean, is final and binding.

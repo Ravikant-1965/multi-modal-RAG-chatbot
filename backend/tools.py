@@ -76,9 +76,10 @@ TOOLS = [
         "type": "function",
         "function": {
             "name": "search_knowledge_base",
-            "description" : "Searches the Zorvex Technologies company knowledge base: leave, medical, HR, hiring, tech, incident "
-                            "reports and travel expense policies. Use it for any question about company policies or documents. "
-                            "Returns the most relevant passages with their source.",
+            "description": "Searches the official USAR GGSIPU campus knowledge base: academic circulars, course codes and syllabi, "
+                           "attendance and leave policies, exam schedules and seating arrangements, IT guidelines, and code of conduct. "
+                           "Use it for any question about college regulations, academic notices, or campus facilities. "
+                           "Returns the most relevant passages with their source document citations.",
             "parameters": {
                 "type": "object",
                 "properties": {
